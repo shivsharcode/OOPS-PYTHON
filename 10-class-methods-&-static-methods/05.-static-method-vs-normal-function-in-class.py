@@ -23,7 +23,6 @@ class Vehicle:
         print("Vehicle horn is blown")
         
 
-Vehicle.start()
 Vehicle.stop()       # class can access normal function
 Vehicle.horn()      # class can access static method
 
