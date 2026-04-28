@@ -22,6 +22,7 @@ class CurrentAccount(Account):
         else:
             current_balance -= amount
             self.set_balance(current_balance)
+            print("Withdrawal successful")
         
         
 
