@@ -9,6 +9,9 @@ class Account(ABC):
         self.__balance = balance                 # private. attribute  
         # self.__pin = pin                      # pvt. attribute
         
+    def __repr__(self):
+        return f"{self.type.capitalize()} Account | Name: {self.name} | Balance: {self.get_balance()} | Account No.: {self.account_number}"    # self.type, gives the class name to which instance belongs
+    
     # setter
     @abstractmethod
     def withdraw(self, amount):
@@ -16,6 +19,8 @@ class Account(ABC):
     
     # setter
     def deposit(self, amount):
+        if amount <= 0:
+            raise ValueError("Deposit must be positive")
         self.__balance += amount
         
     # getter

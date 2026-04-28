@@ -10,8 +10,8 @@ class CurrentAccount(Account):
         self.type = "current"
         self._overdraftLimit = -50000
         
-    def __repr__(self):
-        return f"CurrentAccount('{self.account_number}')"
+    # def __repr__(self):
+    #     return f"CurrentAccount('{self.account_number}')"
     
     def withdraw(self, amount: float):
         

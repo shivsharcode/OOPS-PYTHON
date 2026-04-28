@@ -9,10 +9,6 @@ class SavingsAccount(Account):
         self.type = "savings"
         self._minBalance = 500   # protected
     
-             
-    def __repr__(self):
-        return f"SavingsAccount('{self.account_number}')"
-    
     
     # setter
     def withdraw(self, amount):
