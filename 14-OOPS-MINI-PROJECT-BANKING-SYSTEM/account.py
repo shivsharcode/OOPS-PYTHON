@@ -10,7 +10,7 @@ class Account(ABC):
         # self.__pin = pin                      # pvt. attribute
         
     def __repr__(self):
-        return f"{self.type.capitalize()} Account | Name: {self.name} | Balance: {self.get_balance()} | Account No.: {self.account_number}"    # self.type, gives the class name to which instance belongs
+        return f"{self.type.capitalize()} Account | Name: {self.name} | Balance: {self.get_balance()} | Account No.: {self.account_number}"    # self.type, is an attribute in the child classes SavingsAccount and CurrentAccount
     
     # setter
     @abstractmethod
